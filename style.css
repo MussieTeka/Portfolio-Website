@@ -115,6 +115,7 @@ nav ul li a {
   line-height: 24px;
   color: #7f8cff;
   height: 40px;
+  order: 2;
 }
 
 .social-media ul {
@@ -199,6 +200,49 @@ nav ul li a {
   list-style: none;
   margin-top: 10px;
   margin-bottom: 40px;
+}
+
+.multi-post p {
+  font-family: 'Poppins', sans-serif;
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0;
+  text-align: left;
+  color: #344563;
+  margin-bottom: 20px;
+}
+
+.contact p {
+  height: 102px;
+  width: 500px;
+  left: 116px;
+  top: 68px;
+  border-radius: nullpx;
+  font-family: "Poppins", sans-serif;
+  font-size: 19px;
+  font-weight: 100;
+  line-height: 28px;
+  letter-spacing: 0;
+  text-align: center;
+  color: #ebebff;
+}
+
+.about-text p {
+  height: 102px;
+  width: 447px;
+  left: 0;
+  top: 126px;
+  border-radius: nullpx;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0;
+  text-align: left;
+  color: #344563;
+  margin-bottom: 10px;
+  order: 1;
 }
 
 #html {
@@ -346,17 +390,6 @@ nav ul li a {
   border-radius: 0;
 }
 
-.multi-post p {
-  font-family: 'Poppins', sans-serif;
-  font-size: 17px;
-  font-weight: 400;
-  line-height: 24px;
-  letter-spacing: 0;
-  text-align: left;
-  color: #344563;
-  margin-bottom: 20px;
-}
-
 #ruby {
   height: 24px;
   width: 105px;
@@ -374,7 +407,6 @@ nav ul li a {
   top: 4px;
   border-radius: nullpx;
   font-family: 'Poppins', sans-serif;
-  font-family: Poppins;
   font-size: 12px;
   font-weight: 500;
   line-height: 16px;
@@ -462,34 +494,6 @@ nav ul li a {
   order: 0;
 }
 
-.about-text p {
-  height: 102px;
-  width: 447px;
-  left: 0;
-  top: 126px;
-  border-radius: nullpx;
-  font-family: "Poppins", sans-serif;
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 24px;
-  letter-spacing: 0;
-  text-align: left;
-  color: #344563;
-  margin-bottom: 10px;
-  order: 1;
-}
-
-.social-media p {
-  font-family: 'Poppins', sans-serif;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 24px;
-  color: #7f8cff;
-  height: 40px;
-  order: 2;
-}
-
 #about-button {
   border: 1px solid #6070ff;
   background-color: #fff;
@@ -554,21 +558,6 @@ nav ul li a {
   text-align: center;
   color: #fff;
   margin-top: 142px;
-}
-
-.contact p {
-  height: 102px;
-  width: 500px;
-  left: 116px;
-  top: 68px;
-  border-radius: nullpx;
-  font-family: "Poppins", sans-serif;
-  font-size: 19px;
-  font-weight: 100;
-  line-height: 28px;
-  letter-spacing: 0;
-  text-align: center;
-  color: #ebebff;
 }
 
 .contact form {
