@@ -1,22 +1,4 @@
 {
-  "name": "portfolio-website",
-  "version": "1.0.0",
-  "description": "Portfolio Website",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/MussieTeka/Portfolio-Website.git"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/MussieTeka/Portfolio-Website/issues"
-  },
-  "homepage": "https://github.com/MussieTeka/Portfolio-Website#readme",
   "devDependencies": {
     "hint": "^7.1.3",
     "stylelint": "^13.13.1",
