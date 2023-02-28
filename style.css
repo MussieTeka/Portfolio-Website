@@ -19,7 +19,7 @@ header {
 nav {
   height: 48px;
   width: 100%;
-  border-radius: 0px;
+  border-radius: 0;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -33,14 +33,14 @@ nav {
   font-size: 18px;
   font-weight: 700;
   line-height: 20px;
-  letter-spacing: 0em;
+  letter-spacing: 0;
   color: #6070ff;
 }
 
 header nav img {
   height: 12px;
   width: 18px;
-  border-radius: 0px;
+  border-radius: 0;
   margin-right: 12px;
   margin-top: 10px;
 }
@@ -48,7 +48,7 @@ header nav img {
 .container-header-text {
   height: 620px;
   width: 100%;
-  border-radius: 0px;
+  border-radius: 0;
   background-image: url(Images/header-shapes\ mobile.png);
 }
 
@@ -67,7 +67,7 @@ header nav img {
   font-size: 40px;
   font-weight: 700;
   line-height: 52px;
-  letter-spacing: 0em;
+  letter-spacing: 0;
   text-align: left;
   color: #172b4d;
 }
@@ -76,7 +76,7 @@ header nav img {
   font-size: 16px;
   font-weight: 400;
   line-height: 24px;
-  letter-spacing: 0em;
+  letter-spacing: 0;
   text-align: left;
   color: #344563;
 }
@@ -98,7 +98,7 @@ header nav img {
 .social-media ul {
   height: 20.000062942504883px;
   width: 170.1666717529297px;
-  border-radius: 0px;
+  border-radius: 0;
   display: flex;
   gap: 25px;
   list-style: none;
@@ -107,28 +107,28 @@ header nav img {
 #twitter {
   height: 19.962478637695312px;
   width: 19.985925674438477px;
-  border-radius: 0px;
+  border-radius: 0;
   color: #505f79;
 }
 
 #linkedin {
   height: 20.000062942504883px;
   width: 20.00014877319336px;
-  border-radius: 0px;
+  border-radius: 0;
   color: #505f79;
 }
 
 #medium {
   height: 16px;
   width: 20px;
-  border-radius: 0px;
+  border-radius: 0;
   color: #505f79;
 }
 
 #github {
   height: 20px;
   width: 17.985200881958008px;
-  border-radius: 0px;
+  border-radius: 0;
   color: #505f79;
 }
 
@@ -137,7 +137,7 @@ header nav img {
   width: 14.166671752929688px;
   left: 180px;
   top: 470px;
-  border-radius: 0px;
+  border-radius: 0;
   color: #505f79;
 }
 
@@ -165,7 +165,7 @@ header nav img {
 .tonic {
   height: 288px;
   width: 295px;
-  border-radius: 0px;
+  border-radius: 0;
   display: flex;
   flex-direction: column;
   margin-top: 12px;
@@ -178,7 +178,7 @@ header nav img {
   font-size: 32px;
   font-weight: 700;
   line-height: 44px;
-  letter-spacing: 0em;
+  letter-spacing: 0;
   text-align: left;
   color: #172b4d;
 }
@@ -186,7 +186,7 @@ header nav img {
 .tonic img {
   height: 32px;
   width: 236px;
-  border-radius: 0px;
+  border-radius: 0;
   margin-top: 20px;
   margin-bottom: 20px;
 }
@@ -197,7 +197,7 @@ header nav img {
   font-size: 17px;
   font-weight: 400;
   line-height: 24px;
-  letter-spacing: 0em;
+  letter-spacing: 0;
   text-align: left;
   color: #344563;
 }
@@ -205,9 +205,9 @@ header nav img {
 .tags {
   height: 24px;
   width: 203px;
-  left: 0px;
+  left: 0;
   top: 180px;
-  border-radius: 0px;
+  border-radius: 0;
   display: flex;
   list-style: none;
   gap: 8px;
@@ -222,6 +222,18 @@ header nav img {
   border-radius: 8px;
   padding: 4px 12px 4px 12px;
   background-color: #ebebff;
+}
+
+.contact p {
+  height: 102px;
+  width: 327px;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 28px;
+  letter-spacing: 0;
+  text-align: center;
+  color: #ebebff;
+  margin-bottom: 40px;
 }
 
 #html p {
@@ -310,6 +322,25 @@ header nav img {
   margin-top: 20px;
 }
 
+.contact form button {
+  border: 1px solid #6070ff;
+  background-color: #fff;
+  height: 48px;
+  width: 142px;
+  border-radius: 8px;
+  padding: 12px 16px 12px 16px;
+  cursor: pointer;
+  text-align: left;
+  letter-spacing: 0.03rem;
+  line-height: 24px;
+  font-family: "Poppins", sans-serif;
+  font-size: 17px;
+  font-weight: 500;
+  font-style: normal;
+  color: #6070ff;
+  margin-right: 190px;
+}
+
 .tonic button:hover {
   opacity: 0.7;
   color: #fff;
@@ -331,6 +362,7 @@ header nav img {
   background-color: #fff;
   border: 1px solid #555;
 }
+
 /* Third Card */
 
 .card-3 {
@@ -355,7 +387,7 @@ header nav img {
 .about {
   height: 1263px;
   width: 375px;
-  border-radius: [object Object]px;
+  border-radius: [object object]px;
   background-color: #fff;
   margin-top: 114px;
   border-top-right-radius: 75px;
@@ -368,14 +400,14 @@ header nav img {
 #header-text {
   height: 409px;
   width: 327px;
-  border-radius: 0px;
+  border-radius: 0;
   margin-bottom: 40px;
 }
 
 .skill-list {
   height: 464.14678955078125px;
   width: 327px;
-  border-radius: 0px;
+  border-radius: 0;
 }
 
 /* Conntact */
@@ -403,22 +435,10 @@ header nav img {
   font-size: 40px;
   font-weight: 700;
   line-height: 52px;
-  letter-spacing: 0em;
+  letter-spacing: 0;
   text-align: center;
   color: #fff;
   margin-top: 142px;
-}
-
-.contact p {
-  height: 102px;
-  width: 327px;
-  font-size: 20px;
-  font-weight: 400;
-  line-height: 28px;
-  letter-spacing: 0em;
-  text-align: center;
-  color: #ebebff;
-  margin-bottom: 40px;
 }
 
 .contact form {
@@ -432,10 +452,10 @@ header nav img {
 .contact form #name {
   height: 48px;
   width: 327px;
-  left: 0px;
-  top: 0px;
+  left: 0;
+  top: 0;
   border-radius: 8px;
-  background: linear-gradient(0deg, #ffffff, #ffffff);
+  background: linear-gradient(0deg, #fff, #fff);
   border: 1px solid #cfd8dc;
   margin-bottom: 25px;
   padding: 20px;
@@ -444,10 +464,10 @@ header nav img {
 .contact form #email {
   height: 48px;
   width: 327px;
-  left: 0px;
-  top: 0px;
+  left: 0;
+  top: 0;
   border-radius: 8px;
-  background: linear-gradient(0deg, #ffffff, #ffffff);
+  background: linear-gradient(0deg, #fff, #fff);
   border: 1px solid #cfd8dc;
   margin-bottom: 25px;
   padding: 20px;
@@ -456,32 +476,13 @@ header nav img {
 .contact form #message {
   height: 170px;
   width: 327px;
-  left: 0px;
-  top: 0px;
+  left: 0;
+  top: 0;
   border-radius: 8px;
-  background: linear-gradient(0deg, #ffffff, #ffffff);
+  background: linear-gradient(0deg, #fff, #fff);
   border: 1px solid #cfd8dc;
   margin-bottom: 25px;
   padding: 20px;
-}
-
-.contact form button {
-  border: 1px solid #6070ff;
-  background-color: #fff;
-  height: 48px;
-  width: 142px;
-  border-radius: 8px;
-  padding: 12px 16px 12px 16px;
-  cursor: pointer;
-  text-align: left;
-  letter-spacing: 0.03rem;
-  line-height: 24px;
-  font-family: "Poppins", sans-serif;
-  font-size: 17px;
-  font-weight: 500;
-  font-style: normal;
-  color: #6070ff;
-  margin-right: 190px;
 }
 
 .contact form button:hover {
