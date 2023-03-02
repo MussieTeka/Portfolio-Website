@@ -96,6 +96,10 @@ header nav img {
   margin-bottom: 20px;
 }
 
+nav ul {
+  display: none;
+}
+
 .social-media ul {
   height: 20.000062942504883px;
   width: 170.1666717529297px;
@@ -368,7 +372,6 @@ header nav img {
 /* Third Card */
 
 .card-3 {
-  display: block;
   height: 600px;
   width: 327px;
   border-radius: 16px;
@@ -382,7 +385,6 @@ header nav img {
 }
 
 #card-5-mobile {
-  display: block;
   height: 600px;
   width: 327px;
   border-radius: 16px;
@@ -437,7 +439,7 @@ header nav img {
   font-size: 40px;
   font-weight: 700;
   line-height: 52px;
-  letter-spacing: 0em;
+  letter-spacing: 0;
   text-align: left;
   color: #172b4d;
 }
@@ -445,16 +447,17 @@ header nav img {
 #about-p {
   height: 144px;
   width: 327px;
-  left: 0px;
+  left: 0;
   top: 113px;
   border-radius: nullpx;
   font-size: 16px;
   font-weight: 400;
   line-height: 24px;
-  letter-spacing: 0em;
+  letter-spacing: 0;
   text-align: left;
   color: #344563;
 }
+
 .skill-list {
   height: 464.14678955078125px;
   width: 327px;
@@ -558,10 +561,6 @@ header nav img {
   border: 1px solid #555;
 }
 
-nav ul {
-  display: none;
-}
-
 #nature-desktop {
   display: none;
 }
@@ -573,9 +572,11 @@ nav ul {
 #card-3-desktop {
   display: none;
 }
+
 #card-4-desktop {
   display: none;
 }
+
 #card-5-desktop {
   display: none;
 }
@@ -752,6 +753,10 @@ nav ul {
     text-align: left;
     color: #091e42;
     margin-top: 20px;
+  }
+
+  header nav img {
+    display: none;
   }
 
   .tonic img {
@@ -1269,9 +1274,7 @@ nav ul {
     font-style: normal;
     color: #6070ff;
   }
-  header nav img {
-    display: none;
-  }
+
   #nature-mobile {
     display: none;
   }
