@@ -91,6 +91,16 @@ This project involves creating a completed and responsive portfolio website with
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
+<!-- LIVE DEMO -->a
+
+## 🚀 Live Demo <a name="live-demo"></a>
+
+> Here is a link to my deployed porfolio website.
+
+- [Live Demo Link](https://mussieteka.github.io/Portfolio-Website/)
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
 <!-- GETTING STARTED -->
 
 ## 💻 Getting Started <a name="getting-started"></a>
