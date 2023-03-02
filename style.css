@@ -95,6 +95,7 @@ header nav img {
   border-radius: nullpx;
   color: #7f8cff;
   margin-bottom: 20px;
+  order: 0;
 }
 
 nav ul {
@@ -108,6 +109,7 @@ nav ul {
   display: flex;
   gap: 25px;
   list-style: none;
+  order: 1;
 }
 
 #twitter {
@@ -687,7 +689,7 @@ nav ul {
     line-height: 24px;
     color: #7f8cff;
     height: 40px;
-    order: 2;
+    order: 0;
   }
 
   .social-media ul {
@@ -698,7 +700,7 @@ nav ul {
     list-style: none;
     height: 20px;
     width: 170px;
-    margin-top: 0;
+    margin-top: 1;
   }
 
   /* Second Card */
