@@ -1,0 +1,142 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #e5e5e5;
+}
+
+header {
+  height: 718px;
+  width: 375px;
+  background-color: #fff;
+  border-bottom-left-radius: 75px;
+}
+
+nav {
+  height: 48px;
+  width: 100%;
+  border-radius: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  height: 20px;
+  width: 76px;
+  margin-left: 12px;
+  margin-top: 10px;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 20px;
+  letter-spacing: 0;
+  color: #6070ff;
+}
+
+header nav img {
+  height: 12px;
+  width: 18px;
+  border-radius: 0;
+  margin-right: 12px;
+  margin-top: 10px;
+}
+
+.container-header-text {
+  height: 620px;
+  width: 100%;
+  border-radius: 0;
+  background-image: url(Images/header-shapes\ mobile.png);
+}
+
+.header-text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-left: 12px;
+  padding-top: 140px;
+}
+
+.header-text h2 {
+  height: 120px;
+  width: 327px;
+  border-radius: nullpx;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 52px;
+  letter-spacing: 0;
+  text-align: left;
+  color: #172b4d;
+}
+
+.header-text p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0;
+  text-align: left;
+  color: #344563;
+}
+
+.social-media {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+}
+
+.social-media p {
+  height: 24px;
+  width: 130px;
+  border-radius: nullpx;
+  color: #7f8cff;
+  margin-bottom: 20px;
+}
+
+.social-media ul {
+  height: 20.000062942504883px;
+  width: 170.1666717529297px;
+  border-radius: 0;
+  display: flex;
+  gap: 25px;
+  list-style: none;
+}
+
+#twitter {
+  height: 19.962478637695312px;
+  width: 19.985925674438477px;
+  border-radius: 0;
+  color: #505f79;
+}
+
+#linkedin {
+  height: 20.000062942504883px;
+  width: 20.00014877319336px;
+  border-radius: 0;
+  color: #505f79;
+}
+
+#medium {
+  height: 16px;
+  width: 20px;
+  border-radius: 0;
+  color: #505f79;
+}
+
+#github {
+  height: 20px;
+  width: 17.985200881958008px;
+  border-radius: 0;
+  color: #505f79;
+}
+
+#angel {
+  height: 20px;
+  width: 14.166671752929688px;
+  left: 180px;
+  top: 470px;
+  border-radius: 0;
+  color: #505f79;
+}
