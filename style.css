@@ -24,6 +24,7 @@ nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  justify-items: center;
 }
 
 .logo {
@@ -41,10 +42,11 @@ nav {
 
 header nav img {
   height: 12px;
-  width: 18px;
+  /* width: 18px; */
   border-radius: 0;
   margin-right: 12px;
-  margin-top: 10px;
+  width: auto;
+  /* margin-top: 10px; */
 }
 
 .container-header-text {
@@ -57,14 +59,15 @@ header nav img {
 .header-text {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: start;
+  align-content: center;
   margin-left: 12px;
   padding-top: 140px;
 }
 
 .header-text h2 {
   height: 120px;
-  width: 327px;
+  width: auto;
   border-radius: nullpx;
   font-size: 40px;
   font-weight: 700;
@@ -81,6 +84,7 @@ header nav img {
   letter-spacing: 0;
   text-align: left;
   color: #344563;
+  width: auto;
 }
 
 .social-media {
@@ -91,8 +95,7 @@ header nav img {
 
 .social-media p {
   height: 24px;
-  width: 130px;
-  border-radius: nullpx;
+  width: auto;
   color: #7f8cff;
   margin-bottom: 20px;
   order: 0;
@@ -166,14 +169,14 @@ nav ul {
 
 #nature-mobile {
   display: block;
-  height: 220px;
-  width: 295px;
-  border-radius: 8px;
+  /* height: 220px; */
+  /* width: 295px; */
+  /* border-radius: 8px; */
 }
 
 .tonic {
   height: 288px;
-  width: 295px;
+  width: 100%;
   border-radius: 0;
   display: flex;
   flex-direction: column;
@@ -182,8 +185,8 @@ nav ul {
 
 .tonic h2 {
   height: 36px;
-  width: 295px;
-  border-radius: nullpx;
+  width: auto;
+  /* border-radius: nullpx; */
   font-size: 32px;
   font-weight: 700;
   line-height: 44px;
@@ -195,6 +198,7 @@ nav ul {
 .tonic img {
   height: 32px;
   width: 236px;
+  /* width: auto; */
   border-radius: 0;
   margin-top: 20px;
   margin-bottom: 20px;
@@ -202,7 +206,8 @@ nav ul {
 
 .tonic p {
   height: 76px;
-  width: 295px;
+  width: auto;
+  /* width: 295px; */
   font-size: 17px;
   font-weight: 400;
   line-height: 24px;
@@ -213,9 +218,10 @@ nav ul {
 
 .tags {
   height: 24px;
-  width: 203px;
+  /* width: 203px; */
+  width: auto;
   left: 0;
-  top: 180px;
+  /* top: 180px; */
   border-radius: 0;
   display: flex;
   list-style: none;
@@ -250,8 +256,6 @@ nav ul {
   width: 29px;
   left: 12px;
   top: 4px;
-  border-radius: nullpx;
-  font-family: "Poppins", sans-serif;
   font-size: 12px;
   font-weight: 500;
   line-height: 16px;
@@ -275,8 +279,6 @@ nav ul {
   width: 21px;
   left: 12px;
   top: 4px;
-  border-radius: nullpx;
-  font-family: "Poppins", sans-serif;
   font-size: 12px;
   font-weight: 500;
   line-height: 16px;
@@ -419,7 +421,7 @@ nav ul {
   z-index: 1;
 }
 
-#about-mobile {
+/* #about-mobile {
   width: 375px;
   border-radius: [object object]px;
   background-color: #fff;
@@ -429,7 +431,7 @@ nav ul {
   flex-direction: column;
   position: absolute;
   z-index: 1;
-}
+} */
 
 #header-text {
   height: 409px;
@@ -449,10 +451,11 @@ nav ul {
 
 #about-p {
   height: 144px;
-  width: 327px;
-  left: 0;
+  /* width: 327px; */
+  width: auto;
+  /* left: 0;
   top: 113px;
-  border-radius: nullpx;
+  border-radius: nullpx; */
   font-size: 16px;
   font-weight: 400;
   line-height: 24px;
@@ -463,7 +466,8 @@ nav ul {
 
 .skill-list {
   height: 464.14678955078125px;
-  width: 327px;
+  /* width: 327px; */
+  width: auto;
   border-radius: 0;
 }
 
@@ -486,7 +490,7 @@ nav ul {
 
 .contact h2 {
   height: 56px;
-  width: 801px;
+  /* width: 801px; */
   top: 4734px;
   border-radius: nullpx;
   font-size: 40px;
