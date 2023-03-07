@@ -382,6 +382,20 @@ nav ul {
   margin-top: 20px;
 }
 
+.contact form button {
+  height: 48px;
+  width: 142px;
+  border-radius: 8px;
+  padding: 12px 16px 12px 16px;
+  color: #6070ff;
+  font-size: 17px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  text-align: center;
+  background: #fff;
+}
+
 .tonic button:hover {
   opacity: 0.7;
   color: #fff;
@@ -443,7 +457,7 @@ nav ul {
   width: 375px;
   border-radius: [object object]px;
   background-color: #fff;
-  margin-top: 114px;
+  margin-top: 80px;
   border-top-right-radius: 75px;
   display: flex;
   flex-direction: column;
@@ -465,6 +479,7 @@ nav ul {
   letter-spacing: 0;
   text-align: left;
   color: #172b4d;
+  margin-bottom: 15px;
 }
 
 #about-p {
@@ -478,10 +493,47 @@ nav ul {
   color: #344563;
 }
 
+#about-button {
+  border: 1px solid #6070ff;
+  background-color: #fff;
+  height: 48px;
+  width: 162px;
+  left: 0;
+  top: 344px;
+  border-radius: 8px;
+  padding: 12px;
+  cursor: pointer;
+  text-align: center;
+  letter-spacing: 0.03rem;
+  line-height: 24px;
+  font-family: "Poppins", sans-serif;
+  font-size: 17px;
+  font-weight: 500;
+  font-style: normal;
+  color: #396df2;
+  margin-top: 34px;
+  order: 3;
+}
+
+#about-button:hover {
+  opacity: 0.7;
+  color: #fff;
+  background-color: #6070ff;
+  border: 1px solid #fff;
+}
+
+#about-button:active {
+  opacity: 1;
+  color: #fff;
+  background-color: #00f;
+  border: 1px solid #6070ff;
+}
+
 .skill-list {
   height: 464.14678955078125px;
   width: auto;
   border-radius: 0;
+  margin-top: 100px;
 }
 
 /* Conntact */
@@ -498,7 +550,7 @@ nav ul {
   background-size: cover;
   position: absolute;
   z-index: 1;
-  top: 4600px;
+  top: 4750px;
 }
 
 .contact h2 {
@@ -1117,7 +1169,6 @@ nav ul {
     font-weight: 500;
     font-style: normal;
     color: #6070ff;
-    margin-right: 190px;
   }
 
   .multi-post button:hover {

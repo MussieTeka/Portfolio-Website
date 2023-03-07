@@ -19,9 +19,9 @@
         <nav>
           <p class="logo">Mussie</p>
           <ul id="sidemenu">
-            <li><a href="#">Porfolio</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Contact</a></li>
+            <li onclick="closeMenu()"><a href="#porfolio">Porfolio</a></li>
+            <li onclick="closeMenu()"><a href="#about-mobile">About</a></li>
+            <li onclick="closeMenu()"><a href="#contact">Contact</a></li>
             <i id="close" class="fas fa-times" onclick="closeMenu()"></i>
           </ul>
           <i id="open" class="fas fa-bars" onclick="openMenu()"></i>
@@ -73,7 +73,7 @@
       </div>
     </header>
     <!-- Second Card -->
-    <section class="card-1">
+    <section id="porfolio" class="card-1">
       <div class="nature">
         <img
           id="nature-mobile"
@@ -257,7 +257,10 @@
     <!-- About Card Mobile-->
     <section class="about" id="about-mobile">
       <div class="header-text" id="header-text">
-        <h2 id="about-h">About Myself</h2>
+        <h2 id="about-h">
+          About <br />
+          Myself
+        </h2>
         <p id="about-p">
           Hello I’m a software developer! I can help you build a product ,
           feature or website Look through some of my work and experience! If you
@@ -297,6 +300,7 @@
               ></a>
             </li>
           </ul>
+          <button id="about-button">Get My Resume</button>
         </div>
       </div>
       <div class="skill-list" id="skill-list">
@@ -350,7 +354,7 @@
       </div>
     </div>
     <!-- Contact Card -->
-    <section class="contact">
+    <section id="contact" class="contact">
       <h2>Contact me</h2>
       <p>
         If you have an application you are interested in developing, a feature
