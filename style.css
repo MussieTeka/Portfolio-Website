@@ -48,16 +48,15 @@ nav ul li {
 nav ul li a {
   color: #fff;
   text-decoration: none;
-  font-size: 18px;
   position: relative;
   height: 24px;
   width: 251px;
-  left: 0px;
+  left: 0;
   top: 8px;
   font-size: 32px;
   font-weight: 550;
   line-height: 44px;
-  letter-spacing: 0em;
+  letter-spacing: 0;
   text-align: left;
 }
 
@@ -88,6 +87,7 @@ nav ul {
   transition: right 0.5s;
   opacity: 0.95;
 }
+
 #close {
   position: absolute;
   right: 45px;
@@ -95,7 +95,7 @@ nav ul {
   cursor: pointer;
   height: 12px;
   width: 12px;
-  border-radius: 0px;
+  border-radius: 0;
   color: #fff;
   font-size: 25px;
 }
@@ -104,10 +104,9 @@ nav ul {
   display: block;
   font-size: 25px;
   top: 40px;
-  border-radius: 0px;
+  border-radius: 0;
   color: #6070ff;
   right: 60px;
-  top: 40px;
 }
 
 /* second section */
@@ -383,25 +382,6 @@ nav ul {
   margin-top: 20px;
 }
 
-.contact form button {
-  border: 1px solid #6070ff;
-  background-color: #fff;
-  height: 48px;
-  width: 142px;
-  border-radius: 8px;
-  padding: 12px 16px 12px 16px;
-  cursor: pointer;
-  text-align: left;
-  letter-spacing: 0.03rem;
-  line-height: 24px;
-  font-family: "Poppins", sans-serif;
-  font-size: 17px;
-  font-weight: 500;
-  font-style: normal;
-  color: #6070ff;
-  margin-right: 190px;
-}
-
 .tonic button:hover {
   opacity: 0.7;
   color: #fff;
@@ -655,7 +635,7 @@ nav ul {
     height: 40px;
     width: 259px;
     left: 1039px;
-    border-radius: 0px;
+    border-radius: 0;
     z-index: auto;
     padding-top: 10px;
     margin-top: 10px;
@@ -665,7 +645,7 @@ nav ul {
   nav ul li {
     display: inline-block;
     list-style: none;
-    margin: 0px 20px;
+    margin: 0 20px;
   }
 
   nav ul li a {
@@ -1121,6 +1101,25 @@ nav ul {
     color: #396df2;
   }
 
+  .contact form button {
+    border: 1px solid #6070ff;
+    background-color: #fff;
+    height: 48px;
+    width: 142px;
+    border-radius: 8px;
+    padding: 12px 16px 12px 16px;
+    cursor: pointer;
+    text-align: left;
+    letter-spacing: 0.03rem;
+    line-height: 24px;
+    font-family: "Poppins", sans-serif;
+    font-size: 17px;
+    font-weight: 500;
+    font-style: normal;
+    color: #6070ff;
+    margin-right: 190px;
+  }
+
   .multi-post button:hover {
     opacity: 0.7;
     color: #fff;
@@ -1261,6 +1260,7 @@ nav ul {
     background-color: #6070ff;
     border: 1px solid #fff;
   }
+
   #about-button:active {
     opacity: 1;
     color: #fff;
@@ -1370,25 +1370,6 @@ nav ul {
     text-align: left;
     margin-bottom: 25px;
     padding: 20px;
-  }
-
-  .contact form button {
-    border: 1px solid #6070ff;
-    background-color: #fff;
-    height: 48px;
-    width: 162px;
-    border-radius: 8px;
-    padding: 12px;
-    margin-left: 130px;
-    cursor: pointer;
-    text-align: center;
-    letter-spacing: 0.03rem;
-    line-height: 24px;
-    font-family: "Poppins", sans-serif;
-    font-size: 17px;
-    font-weight: 500;
-    font-style: normal;
-    color: #6070ff;
   }
 
   #nature-mobile {
