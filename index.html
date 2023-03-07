@@ -6,18 +6,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio Website | Mussie, software developer</title>
     <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
+      integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
+      crossorigin="anonymous"
+    />
   </head>
   <body>
     <header id="mobiile">
-      <nav>
-        <p class="logo">Mussie</p>
-        <img src="Icons/Union.png" alt="" />
-        <ul>
-          <li><a href="#">Portfolio</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Contact</a></li>
-        </ul>
-      </nav>
+      <div class="nav-container">
+        <nav>
+          <p class="logo">Mussie</p>
+          <ul id="sidemenu">
+            <li><a href="#">Porfolio</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+            <i id="close" class="fas fa-times" onclick="closeMenu()"></i>
+          </ul>
+          <i id="open" class="fas fa-bars" onclick="openMenu()"></i>
+        </nav>
+      </div>
       <div class="container-header-text">
         <div class="header-text">
           <h2>
@@ -379,5 +388,14 @@
         </button>
       </form>
     </section>
+    <script>
+      var sidemenu = document.getElementById("sidemenu");
+      function openMenu() {
+        sidemenu.style.right = "0";
+      }
+      function closeMenu() {
+        sidemenu.style.right = "-375px";
+      }
+    </script>
   </body>
 </html>
