@@ -84,7 +84,7 @@ nav ul {
   height: 100vh;
   padding-top: 50px;
   z-index: 2;
-  transition: right 0.5s;
+  transition: right 2s;
   opacity: 0.95;
 }
 
@@ -572,6 +572,10 @@ nav ul {
   align-items: center;
   border-radius: 0;
   width: 327px;
+}
+
+.contact form input:hover {
+  border: 2px solid #000;
 }
 
 .contact form #name {
