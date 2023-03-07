@@ -7,7 +7,8 @@
 
 body {
   background-color: #e5e5e5;
-  overflow-x: hidden;
+
+  /* overflow-x: hidden; */
 }
 
 header {
@@ -17,21 +18,20 @@ header {
   border-bottom-left-radius: 75px;
 }
 
+.nav-container {
+  padding: 20px 10% 20px 12px;
+}
+
 nav {
-  height: 48px;
-  width: 100%;
-  border-radius: 0;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  justify-items: center;
+  flex-wrap: wrap;
 }
 
 .logo {
   height: 20px;
   width: 76px;
-  margin-left: 12px;
-  margin-top: 10px;
   font-size: 18px;
   font-weight: 700;
   line-height: 20px;
@@ -40,15 +40,77 @@ nav {
   animation: logoRotate 5s ease-in;
 }
 
-header nav img {
-  height: 12px;
-  /* width: 18px; */
-  border-radius: 0;
-  margin-right: 12px;
-  width: auto;
-  /* margin-top: 10px; */
+nav ul li {
+  list-style: none;
+  display: block;
+  margin: 25px;
 }
 
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  position: relative;
+  height: 24px;
+  width: 251px;
+  left: 0;
+  top: 8px;
+  font-size: 32px;
+  font-weight: 550;
+  line-height: 44px;
+  letter-spacing: 0;
+  text-align: left;
+}
+
+nav ul li ::after {
+  content: "";
+  width: 0;
+  height: 3px;
+  background: #6070ff;
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  transition: 0.5s;
+}
+
+nav ul li a:hover::after {
+  width: 100%;
+}
+
+nav ul {
+  background: #6070ff;
+  position: fixed;
+  top: 0;
+  right: -768px;
+  width: 100%;
+  height: 100vh;
+  padding-top: 50px;
+  z-index: 2;
+  transition: right 1s;
+  opacity: 0.95;
+}
+
+#close {
+  position: absolute;
+  right: 45px;
+  top: 20px;
+  cursor: pointer;
+  height: 12px;
+  width: 12px;
+  border-radius: 0;
+  color: #fff;
+  font-size: 25px;
+}
+
+#open {
+  display: block;
+  font-size: 25px;
+  top: 40px;
+  border-radius: 0;
+  color: #6070ff;
+  right: 60px;
+}
+
+/* second section */
 .container-header-text {
   height: 620px;
   width: 100%;
@@ -99,10 +161,6 @@ header nav img {
   color: #7f8cff;
   margin-bottom: 20px;
   order: 0;
-}
-
-nav ul {
-  display: none;
 }
 
 .social-media ul {
@@ -169,9 +227,6 @@ nav ul {
 
 #nature-mobile {
   display: block;
-  /* height: 220px; */
-  /* width: 295px; */
-  /* border-radius: 8px; */
 }
 
 .tonic {
@@ -186,7 +241,6 @@ nav ul {
 .tonic h2 {
   height: 36px;
   width: auto;
-  /* border-radius: nullpx; */
   font-size: 32px;
   font-weight: 700;
   line-height: 44px;
@@ -198,7 +252,6 @@ nav ul {
 .tonic img {
   height: 32px;
   width: 236px;
-  /* width: auto; */
   border-radius: 0;
   margin-top: 20px;
   margin-bottom: 20px;
@@ -207,7 +260,6 @@ nav ul {
 .tonic p {
   height: 76px;
   width: auto;
-  /* width: 295px; */
   font-size: 17px;
   font-weight: 400;
   line-height: 24px;
@@ -218,10 +270,8 @@ nav ul {
 
 .tags {
   height: 24px;
-  /* width: 203px; */
   width: auto;
   left: 0;
-  /* top: 180px; */
   border-radius: 0;
   display: flex;
   list-style: none;
@@ -334,22 +384,17 @@ nav ul {
 }
 
 .contact form button {
-  border: 1px solid #6070ff;
-  background-color: #fff;
   height: 48px;
   width: 142px;
   border-radius: 8px;
   padding: 12px 16px 12px 16px;
-  cursor: pointer;
-  text-align: left;
-  letter-spacing: 0.03rem;
-  line-height: 24px;
-  font-family: "Poppins", sans-serif;
+  color: #6070ff;
   font-size: 17px;
   font-weight: 500;
-  font-style: normal;
-  color: #6070ff;
-  margin-right: 190px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  text-align: center;
+  background: #fff;
 }
 
 .tonic button:hover {
@@ -413,25 +458,13 @@ nav ul {
   width: 375px;
   border-radius: [object object]px;
   background-color: #fff;
-  margin-top: 114px;
+  margin-top: 80px;
   border-top-right-radius: 75px;
   display: flex;
   flex-direction: column;
   position: absolute;
   z-index: 1;
 }
-
-/* #about-mobile {
-  width: 375px;
-  border-radius: [object object]px;
-  background-color: #fff;
-  margin-top: 114px;
-  border-top-right-radius: 75px;
-  display: flex;
-  flex-direction: column;
-  position: absolute;
-  z-index: 1;
-} */
 
 #header-text {
   height: 409px;
@@ -447,15 +480,12 @@ nav ul {
   letter-spacing: 0;
   text-align: left;
   color: #172b4d;
+  margin-bottom: 15px;
 }
 
 #about-p {
   height: 144px;
-  /* width: 327px; */
   width: auto;
-  /* left: 0;
-  top: 113px;
-  border-radius: nullpx; */
   font-size: 16px;
   font-weight: 400;
   line-height: 24px;
@@ -464,11 +494,47 @@ nav ul {
   color: #344563;
 }
 
+#about-button {
+  border: 1px solid #6070ff;
+  background-color: #fff;
+  height: 48px;
+  width: 162px;
+  left: 0;
+  top: 344px;
+  border-radius: 8px;
+  padding: 12px;
+  cursor: pointer;
+  text-align: center;
+  letter-spacing: 0.03rem;
+  line-height: 24px;
+  font-family: "Poppins", sans-serif;
+  font-size: 17px;
+  font-weight: 500;
+  font-style: normal;
+  color: #396df2;
+  margin-top: 34px;
+  order: 3;
+}
+
+#about-button:hover {
+  opacity: 0.7;
+  color: #fff;
+  background-color: #6070ff;
+  border: 1px solid #fff;
+}
+
+#about-button:active {
+  opacity: 1;
+  color: #fff;
+  background-color: #00f;
+  border: 1px solid #6070ff;
+}
+
 .skill-list {
   height: 464.14678955078125px;
-  /* width: 327px; */
   width: auto;
   border-radius: 0;
+  margin-top: 100px;
 }
 
 /* Conntact */
@@ -485,12 +551,11 @@ nav ul {
   background-size: cover;
   position: absolute;
   z-index: 1;
-  top: 4600px;
+  top: 4750px;
 }
 
 .contact h2 {
   height: 56px;
-  /* width: 801px; */
   top: 4734px;
   border-radius: nullpx;
   font-size: 40px;
@@ -508,6 +573,10 @@ nav ul {
   align-items: center;
   border-radius: 0;
   width: 327px;
+}
+
+.contact form input:hover {
+  border: 2px solid #000;
 }
 
 .contact form #name {
@@ -600,35 +669,71 @@ nav ul {
     border-bottom-left-radius: 120px;
   }
 
+  .nav-container {
+    padding: 10px 10%;
+  }
+
+  .logo {
+    margin-top: 30px;
+  }
+
   nav {
     display: flex;
+    flex-direction: row;
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
-    margin-left: 155px;
-    margin-right: 154px;
-    padding-top: 10px;
+    justify-items: center;
   }
 
   nav ul {
-    display: block;
-    padding-right: 250px;
+    background: #fff;
+    display: flex;
+    height: 40px;
+    width: 259px;
+    left: 1039px;
+    border-radius: 0;
+    z-index: auto;
+    padding-top: 10px;
+    margin-top: 10px;
+    position: absolute;
   }
 
   nav ul li {
     display: inline-block;
     list-style: none;
-    margin: 10px 20px;
+    margin: 0 20px;
   }
 
   nav ul li a {
     color: #344563;
-    font-family: "Poppins", sans-serif;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 17px;
-    line-height: 20px;
     text-decoration: none;
+    font-size: 18px;
+    position: relative;
+    font-weight: 400;
+  }
+
+  #close {
+    display: none;
+  }
+
+  #open {
+    display: none;
+  }
+
+  nav ul li ::after {
+    content: "";
+    width: 0;
+    height: 3px;
+    background: #6070ff;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+  }
+
+  nav ul li a:hover::after {
+    width: 100%;
   }
 
   .container-header-text {
@@ -1053,6 +1158,38 @@ nav ul {
     color: #396df2;
   }
 
+  .contact form button {
+    border: 1px solid #6070ff;
+    background-color: #fff;
+    height: 48px;
+    width: 142px;
+    border-radius: 8px;
+    padding: 12px 16px 12px 16px;
+    cursor: pointer;
+    text-align: left;
+    letter-spacing: 0.03rem;
+    line-height: 24px;
+    font-family: "Poppins", sans-serif;
+    font-size: 17px;
+    font-weight: 500;
+    font-style: normal;
+    color: #6070ff;
+  }
+
+  .multi-post button:hover {
+    opacity: 0.7;
+    color: #fff;
+    background-color: #6070ff;
+    border: 1px solid #fff;
+  }
+
+  .multi-post button:active {
+    opacity: 1;
+    color: #fff;
+    background-color: #00f;
+    border: 1px solid #6070ff;
+  }
+
   /* Fouth Card */
 
   #third-button {
@@ -1073,6 +1210,20 @@ nav ul {
     font-weight: 500;
     font-style: normal;
     color: #fff;
+  }
+
+  #third-button:hover {
+    opacity: 0.7;
+    color: #6070ff;
+    background-color: #fff;
+    border: 1px solid #6070ff;
+  }
+
+  #third-button:active {
+    opacity: 1;
+    color: #fff;
+    background-color: #00f;
+    border: 1px solid #6070ff;
   }
 
   /* Sixth Card */
@@ -1157,6 +1308,20 @@ nav ul {
     color: #396df2;
     margin-top: 34px;
     order: 3;
+  }
+
+  #about-button:hover {
+    opacity: 0.7;
+    color: #fff;
+    background-color: #6070ff;
+    border: 1px solid #fff;
+  }
+
+  #about-button:active {
+    opacity: 1;
+    color: #fff;
+    background-color: #00f;
+    border: 1px solid #6070ff;
   }
 
   .skill-list {
@@ -1261,25 +1426,6 @@ nav ul {
     text-align: left;
     margin-bottom: 25px;
     padding: 20px;
-  }
-
-  .contact form button {
-    border: 1px solid #6070ff;
-    background-color: #fff;
-    height: 48px;
-    width: 162px;
-    border-radius: 8px;
-    padding: 12px;
-    margin-left: 130px;
-    cursor: pointer;
-    text-align: center;
-    letter-spacing: 0.03rem;
-    line-height: 24px;
-    font-family: "Poppins", sans-serif;
-    font-size: 17px;
-    font-weight: 500;
-    font-style: normal;
-    color: #6070ff;
   }
 
   #nature-mobile {
