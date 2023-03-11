@@ -5,40 +5,44 @@ const popups = [
   {
     id: "firstpopup",
     title: "TONIC",
-    image: "images/desktop one popup.png",
+    image: "Images/popup one scaled.png",
     description:
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum han printer took a galley of type and scrambled it 1960s with the releawn printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea",
     tagspop: ["html", "css", "javascript"],
+    tagspopsecond: ["github", "ruby", "bootstrap"],
     liveLink: "https://github.com/MussieTeka/",
     sourceLink: "https://github.com/MussieTeka/TheEduFord",
   },
   {
     id: "secondpopup",
     title: "Multi-Post Stories",
-    image: "Images/popup desktop 3.png",
+    image: "Images/popup two scale image.png",
     description:
-      "Experimental content creation feature that allows users to add to an existing story over the course of a day without spamming their friends.",
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum han printer took a galley of type and scrambled it 1960s with the releawn printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea",
     tagspop: ["html", "css", "javascript"],
+    tagspopsecond: ["github", "ruby", "bootstrap"],
     liveLink: "https://github.com/MussieTeka/",
     sourceLink: "https://github.com/MussieTeka/TheEduFord",
   },
   {
     id: "thirdpopup",
     title: "Facebook 360",
-    image: "Images/nature desktop.png",
+    image: "Images/pop three scaled.png",
     description:
-      "Exploring the future of media in Facebook's first Virtual Reality app; a place to discover and enjoy 360 photos and videos on Gear VR.",
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum han printer took a galley of type and scrambled it 1960s with the releawn printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the release.",
     tagspop: ["html", "css", "javascript"],
+    tagspopsecond: ["github", "ruby", "bootstrap"],
     liveLink: "https://github.com/MussieTeka/",
     sourceLink: "https://github.com/MussieTeka/TheEduFord",
   },
   {
     id: "fourthpopup",
     title: "Uber Navigation",
-    image: "Images/Desktop 2.png",
+    image: "Images/cardfour scaled.png",
     description:
-      "A smart assistant to make driving more safe, efficient, and fun by unlocking your most expensive computer: your car.",
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum han printer took a galley of type and scrambled it 1960s with the releawn printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the release.",
     tagspop: ["html", "css", "javascript"],
+    tagspopsecond: ["github", "ruby", "bootstrap"],
     liveLink: "https://github.com/MussieTeka/",
     sourceLink: "https://github.com/MussieTeka/TheEduFord",
   },
@@ -68,6 +72,11 @@ popups.forEach((popup) => {
           <div>
             <ul class="tagspop">
               ${popup.tagspop
+                .map((tag) => `<li id="${tag}"><p>${tag}</p></li>`)
+                .join("")}
+            </ul>
+            <ul class="tagspopsecond">
+              ${popup.tagspopsecond
                 .map((tag) => `<li id="${tag}"><p>${tag}</p></li>`)
                 .join("")}
             </ul>
