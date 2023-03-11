@@ -1,44 +1,44 @@
-const body = document.querySelector("body");
+const body = document.querySelector('body');
 
 // Desktop dynamic content
 const popups = [
   {
-    id: "firstpopup",
-    title: "TONIC",
-    image: "images/desktop one popup.png",
-    tags: ["html", "css", "javascript"],
-    liveLink: "https://github.com/MussieTeka/",
-    sourceLink: "https://github.com/MussieTeka/TheEduFord",
+    id: 'firstpopup',
+    title: 'TONIC',
+    image: 'images/desktop one popup.png',
+    tagspop: ['html', 'css', 'javascript'],
+    liveLink: 'https://github.com/MussieTeka/',
+    sourceLink: 'https://github.com/MussieTeka/TheEduFord',
   },
   {
-    id: "secondpopup",
-    title: "Multi-Post Stories",
-    image: "Images/popup desktop 3.png",
-    tags: ["html", "css", "javascript"],
-    liveLink: "https://github.com/MussieTeka/",
-    sourceLink: "https://github.com/MussieTeka/TheEduFord",
+    id: 'secondpopup',
+    title: 'Multi-Post Stories',
+    image: 'Images/popup desktop 3.png',
+    tagspop: ['html', 'css', 'javascript'],
+    liveLink: 'https://github.com/MussieTeka/',
+    sourceLink: 'https://github.com/MussieTeka/TheEduFord',
   },
   {
-    id: "thirdpopup",
-    title: "Facebook 360",
-    image: "Images/nature desktop.png",
-    tags: ["html", "css", "javascript"],
-    liveLink: "https://github.com/MussieTeka/",
-    sourceLink: "https://github.com/MussieTeka/TheEduFord",
+    id: 'thirdpopup',
+    title: 'Facebook 360',
+    image: 'Images/nature desktop.png',
+    tagspop: ['html', 'css', 'javascript'],
+    liveLink: 'https://github.com/MussieTeka/',
+    sourceLink: 'https://github.com/MussieTeka/TheEduFord',
   },
   {
-    id: "fourthpopup",
-    title: "Uber Navigation",
-    image: "Images/Desktop 2.png",
-    tags: ["html", "css", "javascript"],
-    liveLink: "https://github.com/MussieTeka/",
-    sourceLink: "https://github.com/MussieTeka/TheEduFord",
+    id: 'fourthpopup',
+    title: 'Uber Navigation',
+    image: 'Images/Desktop 2.png',
+    tagspop: ['html', 'css', 'javascript'],
+    liveLink: 'https://github.com/MussieTeka/',
+    sourceLink: 'https://github.com/MussieTeka/TheEduFord',
   },
 ];
 
-popups.forEach((popup, index) => {
-  const newPopup = document.createElement("div");
-  newPopup.className = "firstpopup";
+popups.forEach((popup) => {
+  const newPopup = document.createElement('div');
+  newPopup.className = 'firstpopup';
   newPopup.id = popup.id;
   newPopup.innerHTML = `
     <div class="firstcontainer">
@@ -74,10 +74,10 @@ popups.forEach((popup, index) => {
         </div>
         <div class="lowerright">
           <div>
-            <ul class="tags">
-              ${popup.tags
-                .map((tag) => `<li id="${tag}"><p>${tag}</p></li>`)
-                .join("")}
+            <ul class="tagspop">
+              ${popup.tagspop
+    .map((tag) => `<li id="${tag}"><p>${tag}</p></li>`)
+    .join('')}
             </ul>
           </div>
           <div class="strline">
@@ -85,23 +85,23 @@ popups.forEach((popup, index) => {
           </div>
           <div class="imgbtns">
             ${
-              popup.liveLink &&
-              `
+  popup.liveLink
+              && `
               <button id="imgbtn">
                 <p onclick="window.location.href='${popup.liveLink}'">See live</p>
                 <img src="Icons/button icon.png" />
               </button>
             `
-            }
+}
             ${
-              popup.sourceLink &&
-              `
+  popup.sourceLink
+              && `
               <button onclick="window.location.href='${popup.sourceLink}'" id="seesource">
                 <p>See source</p>
                 <img src="Icons/gitbtn icon.png" />
               </button>
             `
-            }
+}
           </div>
         </div>
       </div>
@@ -112,56 +112,56 @@ popups.forEach((popup, index) => {
 
 function openPopup(id) {
   const popup = document.getElementById(id);
-  popup.classList.add("openPopup");
-  popup.style.display = "block";
+  popup.classList.add('openPopup');
+  popup.style.display = 'block';
 }
 
 function closePopup(id) {
   const popup = document.getElementById(id);
-  popup.classList.remove("openPopup");
-  popup.style.display = "none";
+  popup.classList.remove('openPopup');
+  popup.style.display = 'none';
 }
 
 // Mobile dynamic content
 
 const popupData = [
   {
-    id: "mobilepopup",
-    title: "Tonic",
-    image: "Images/Snapshoot Portfolio.png",
+    id: 'mobilepopup',
+    title: 'Tonic',
+    image: 'Images/Snapshoot Portfolio.png',
     description:
       " Lorem Ipsum is simply dummy text of the printing and typesettin industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting,remaining essent.",
-    tags: ["html", "css", "javascript"],
+    tags: ['html', 'css', 'javascript'],
   },
   {
-    id: "secondmobilepopup",
-    title: "Multi-Post Stories",
-    image: "Images/Snapshoot Portfolio (1).png",
+    id: 'secondmobilepopup',
+    title: 'Multi-Post Stories',
+    image: 'Images/Snapshoot Portfolio (1).png',
     description:
       " Lorem Ipsum is simply dummy text of the printing and typesettin industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting,remaining essent.",
-    tags: ["html", "css", "javascript"],
+    tags: ['html', 'css', 'javascript'],
   },
   {
-    id: "thirdmobilepopup",
-    title: "Tonic",
-    image: "Images/Snapshoot Portfolio (2).png",
+    id: 'thirdmobilepopup',
+    title: 'Tonic',
+    image: 'Images/Snapshoot Portfolio (2).png',
     description:
       " Lorem Ipsum is simply dummy text of the printing and typesettin industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting,remaining essent.",
-    tags: ["html", "css", "javascript"],
+    tags: ['html', 'css', 'javascript'],
   },
   {
-    id: "fourthmobilepopup",
-    title: "Multi-Post Stories",
-    image: "Images/Snapshoot Portfolio (3).png",
+    id: 'fourthmobilepopup',
+    title: 'Multi-Post Stories',
+    image: 'Images/Snapshoot Portfolio (3).png',
     description:
       " Lorem Ipsum is simply dummy text of the printing and typesettin industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting,remaining essent.",
-    tags: ["html", "css", "javascript"],
+    tags: ['html', 'css', 'javascript'],
   },
 ];
 
 popupData.forEach((popup) => {
-  const popupWindow = document.createElement("div");
-  popupWindow.className = "mobilepopup";
+  const popupWindow = document.createElement('div');
+  popupWindow.className = 'mobilepopup';
   popupWindow.id = popup.id;
   popupWindow.innerHTML = `
     <div class="mobilepopup-container">
@@ -178,8 +178,8 @@ popupData.forEach((popup) => {
       <p>${popup.description}</p>
       <ul class="poptag">
         ${popup.tags
-          .map((tag) => `<li id="${tag}"><p>${tag}</p></li>`)
-          .join("")}
+    .map((tag) => `<li id="${tag}"><p>${tag}</p></li>`)
+    .join('')}
       </ul>
       <img src="images/mobile popup line.png" />
       <div class="imgbtns">
@@ -200,31 +200,31 @@ popupData.forEach((popup) => {
 function toggleMobilePopup(id, isOpen) {
   const popup = document.getElementById(id);
   if (isOpen) {
-    popup.classList.add("mobileopenPopup");
+    popup.classList.add('mobileopenPopup');
   } else {
-    popup.classList.remove("mobileopenPopup");
+    popup.classList.remove('mobileopenPopup');
   }
 }
 
-//Mobile side menu
+// Mobile side menu
 
-var sidemenu = document.getElementById("sidemenu");
+const sidemenu = document.getElementById('sidemenu');
 function openMenu() {
-  sidemenu.style.right = "0";
+  sidemenu.style.right = '0';
 }
 function closeMenu() {
-  sidemenu.style.right = "-768px";
+  sidemenu.style.right = '-768px';
 }
 
-//Form validation project
+// Form validation project
 
-const form = document.querySelector("form");
-form.addEventListener("submit", handleSubmit);
+const form = document.querySelector('form');
+form.addEventListener('submit', handleSubmit);
 
 function handleSubmit(event) {
   event.preventDefault();
 
-  const emailInput = document.querySelector("#email");
+  const emailInput = document.querySelector('#email');
   const email = emailInput.value;
 
   if (email === email.toLowerCase()) {
@@ -232,9 +232,8 @@ function handleSubmit(event) {
     form.submit();
   } else {
     // email is not in lowercase, show error message
-    const errorMessage = document.createElement("p");
-    errorMessage.textContent =
-      "Sorry! Error occured. Email must be in lowercase!";
+    const errorMessage = document.createElement('p');
+    errorMessage.textContent = 'Sorry! Error occured. Email must be in lowercase!';
     form.appendChild(errorMessage);
   }
 }

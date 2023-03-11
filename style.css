@@ -302,6 +302,19 @@ nav ul {
   margin-bottom: 40px;
 }
 
+.mobilepopup-container p {
+  height: 220px;
+  width: 311px;
+  left: 0;
+  top: 0;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0;
+  text-align: left;
+  color: #344563;
+}
+
 #html p {
   height: 16px;
   width: 29px;
@@ -317,12 +330,15 @@ nav ul {
 
 #css {
   height: 24px;
-  width: 45px;
-  left: 61px;
+  width: auto;
+  left: 0;
   top: 0;
   border-radius: 8px;
   padding: 4px 12px 4px 12px;
   background-color: #ebebff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 #css p {
@@ -646,7 +662,7 @@ nav ul {
   padding-bottom: 50px;
   height: 100%;
   width: 100%;
-  border-radius: 0px;
+  border-radius: 0;
   background-color: #c1c7d0;
   transform: scale(0.1);
   visibility: hidden;
@@ -680,31 +696,20 @@ nav ul {
 .tonicpopup h2 {
   height: auto;
   width: auto;
-  left: 0px;
+  left: 0;
   top: 2px;
   font-size: 32px;
   font-weight: 700;
   line-height: 44px;
-  letter-spacing: 0em;
+  letter-spacing: 0;
   text-align: left;
   color: #172b4d;
 }
 
-.mobilepopup-container p {
-  height: 220px;
-  width: 311px;
-  left: 0px;
-  top: 0px;
-  font-size: 15px;
-  font-weight: 400;
-  line-height: 24px;
-  letter-spacing: 0em;
-  text-align: left;
-  color: #344563;
-}
 .poptop .fa {
   color: #67798e;
 }
+
 .poptag {
   height: 24px;
   width: auto;
@@ -730,7 +735,7 @@ nav ul {
   height: 40px;
   width: 142px;
   left: 5px;
-  top: 0px;
+  top: 0;
   border-radius: 8px;
   padding: 8px 25px 8px 25px;
   background: #fff;
@@ -745,7 +750,7 @@ nav ul {
   height: 40px;
   width: 160px;
   left: 5px;
-  top: 0px;
+  top: 0;
   border-radius: 8px;
   padding: 8px 25px 8px 25px;
   background: #fff;
@@ -762,7 +767,7 @@ nav ul {
   font-size: 15px;
   font-weight: 500;
   line-height: 20px;
-  letter-spacing: 0em;
+  letter-spacing: 0;
   text-align: center;
   color: #396df2;
 }
@@ -779,7 +784,7 @@ nav ul {
   font-size: 15px;
   font-weight: 500;
   line-height: 20px;
-  letter-spacing: 0em;
+  letter-spacing: 0;
   text-align: center;
   color: #396df2;
 }
@@ -789,7 +794,7 @@ nav ul {
   width: 18px;
   left: 3px;
   top: 3px;
-  border-radius: 0px;
+  border-radius: 0;
   color: #6070ff;
 }
 
@@ -800,7 +805,7 @@ nav ul {
   height: 40px;
   width: 160px;
   left: 5px;
-  top: 0px;
+  top: 0;
   border-radius: 8px;
   padding: 8px 25px 8px 25px;
   background: #fff;
@@ -817,7 +822,7 @@ nav ul {
   font-size: 15px;
   font-weight: 500;
   line-height: 20px;
-  letter-spacing: 0em;
+  letter-spacing: 0;
   text-align: center;
   color: #396df2;
 }
@@ -846,6 +851,7 @@ nav ul {
 #about-desktop {
   display: none;
 }
+
 .firstpopup {
   display: none;
 }
@@ -853,9 +859,11 @@ nav ul {
 #desktop-pop-button {
   display: none;
 }
+
 #mobile-pop-button {
   display: block;
 }
+
 #tonic-desktop {
   display: none;
 }
@@ -863,6 +871,7 @@ nav ul {
 #tonic-mobile {
   display: block;
 }
+
 @media screen and (min-width: 768px) {
   header {
     width: 100%;
@@ -1095,14 +1104,27 @@ nav ul {
 
   .tags {
     height: 24px;
-    width: 203px;
+    width: auto;
     left: 24px;
     top: 220px;
-    gap: 8px;
+    border-radius: 0;
     display: flex;
     list-style: none;
+    gap: 8px;
     margin-top: 10px;
-    margin-bottom: 40px;
+    margin-bottom: 30px;
+  }
+
+  .tagspop {
+    height: 24px;
+    width: auto;
+    left: 0;
+    border-radius: 0;
+    display: flex;
+    list-style: none;
+    gap: 8px;
+    margin-top: 20px;
+    margin-left: 40px;
   }
 
   .multi-post p {
@@ -1150,12 +1172,15 @@ nav ul {
 
   #html {
     height: 24px;
-    width: 53px;
+    width: auto;
     left: 0;
     top: 0;
     border-radius: 8px;
     padding: 4px 12px 4px 12px;
     background-color: #ebebff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
   #html p {
@@ -1171,6 +1196,7 @@ nav ul {
     letter-spacing: 0.03em;
     text-align: left;
     color: #6070ff;
+    margin: 0;
   }
 
   #css {
@@ -1194,33 +1220,34 @@ nav ul {
     font-weight: 500;
     line-height: 16px;
     letter-spacing: 0.03em;
-    text-align: left;
+    text-align: center;
     color: #6070ff;
+    margin: 0;
   }
 
   #javascript {
     height: 24px;
-    width: 89px;
-    left: 114px;
+    width: auto;
+    left: 0;
     top: 0;
     border-radius: 8px;
     padding: 4px 12px 4px 12px;
     background-color: #ebebff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
   #javascript p {
     height: 16px;
     width: 65px;
-    left: 12px;
-    top: 4px;
-    border-radius: nullpx;
-    font-family: "Poppins", sans-serif;
     font-size: 12px;
     font-weight: 500;
     line-height: 16px;
     letter-spacing: 0.03em;
-    text-align: left;
+    text-align: center;
     color: #6070ff;
+    margin: 0;
   }
 
   .tonic button {
@@ -1247,7 +1274,8 @@ nav ul {
 
   .cardtwo {
     display: flex;
-    align-items: flex-start;
+    align-items: center;
+    justify-content: center;
     background-color: #fff;
     height: 496px;
     width: 1156px;
@@ -1317,27 +1345,27 @@ nav ul {
 
   #ruby {
     height: 24px;
-    width: 105px;
-    left: 61px;
+    width: auto;
+    left: 0;
     top: 0;
     border-radius: 8px;
     padding: 4px 12px 4px 12px;
     background-color: #ebebff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
   #ruby p {
     height: 16px;
     width: 81px;
-    left: 12px;
-    top: 4px;
-    border-radius: nullpx;
-    font-family: "Poppins", sans-serif;
     font-size: 12px;
     font-weight: 500;
     line-height: 16px;
     letter-spacing: 0.03em;
-    text-align: left;
+    text-align: center;
     color: #6070ff;
+    margin: 0;
   }
 
   .multi-post button {
@@ -1629,14 +1657,15 @@ nav ul {
     margin-bottom: 25px;
     padding: 20px;
   }
+
   /* Popup window */
 
   .firstpopup {
     height: 100%;
     width: 100%;
-    left: 0px;
-    top: 0px;
-    border-radius: 0px;
+    left: 0;
+    top: 0;
+    border-radius: 0;
     background: #c1c7d0;
     padding-top: 77px;
     display: block;
@@ -1656,8 +1685,8 @@ nav ul {
   .firstcontainer {
     height: 1100px;
     width: auto;
-    left: 0px;
-    top: 0px;
+    left: 0;
+    top: 0;
     border-radius: 16px;
     background: #fff;
     border: 1px solid #ebecf0;
@@ -1671,19 +1700,19 @@ nav ul {
     align-content: center;
   }
 
-  .toptonic fa {
+  .toptonic .fa {
     color: #67798e;
   }
 
   .toptonic h1 {
     height: 40px;
     width: 1056px;
-    left: 0px;
-    top: 0px;
+    left: 0;
+    top: 0;
     font-size: 40px;
     font-weight: 700;
     line-height: 52px;
-    letter-spacing: 0em;
+    letter-spacing: 0;
     text-align: left;
     color: #091e42;
   }
@@ -1701,94 +1730,14 @@ nav ul {
   .tonicdetails {
     height: 382px;
     width: 778px;
-    left: 0px;
-    top: 0px;
+    left: 0;
+    top: 0;
     font-size: 16px;
     font-weight: 400;
     line-height: 30px;
-    letter-spacing: 0em;
+    letter-spacing: 0;
     text-align: left;
     color: #344563;
-  }
-
-  .tags {
-    height: 24px;
-    width: auto;
-    left: 0;
-    border-radius: 0;
-    display: flex;
-    list-style: none;
-    gap: 8px;
-    margin-top: 20px;
-  }
-
-  #html {
-    height: 24px;
-    width: auto;
-    left: 0;
-    top: 0;
-    border-radius: 8px;
-    padding: 4px 12px 4px 12px;
-    background-color: #ebebff;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
-  #html p {
-    font-size: 12px;
-    font-weight: 500;
-    line-height: 16px;
-    letter-spacing: 0.03em;
-    text-align: center;
-    color: #6070ff;
-    margin: 0;
-  }
-
-  #css {
-    height: 24px;
-    width: auto;
-    left: 0;
-    top: 0;
-    border-radius: 8px;
-    padding: 4px 12px 4px 12px;
-    background-color: #ebebff;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
-  #css p {
-    font-size: 12px;
-    font-weight: 500;
-    line-height: 16px;
-    letter-spacing: 0.03em;
-    text-align: center;
-    color: #6070ff;
-    margin: 0;
-  }
-
-  #javascript {
-    height: 24px;
-    width: auto;
-    left: 0;
-    top: 0;
-    border-radius: 8px;
-    padding: 4px 12px 4px 12px;
-    background-color: #ebebff;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
-  #javascript p {
-    font-size: 12px;
-    font-weight: 500;
-    line-height: 16px;
-    letter-spacing: 0.03em;
-    text-align: center;
-    color: #6070ff;
-    margin: 0;
   }
 
   #githbub {
@@ -1805,29 +1754,6 @@ nav ul {
   }
 
   #githbub p {
-    font-size: 12px;
-    font-weight: 500;
-    line-height: 16px;
-    letter-spacing: 0.03em;
-    text-align: center;
-    color: #6070ff;
-    margin: 0;
-  }
-
-  #ruby {
-    height: 24px;
-    width: auto;
-    left: 0;
-    top: 0;
-    border-radius: 8px;
-    padding: 4px 12px 4px 12px;
-    background-color: #ebebff;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
-  #ruby p {
     font-size: 12px;
     font-weight: 500;
     line-height: 16px;
@@ -1867,7 +1793,7 @@ nav ul {
     height: 40px;
     width: 142px;
     left: 5px;
-    top: 0px;
+    top: 0;
     border-radius: 8px;
     padding: 8px 25px 8px 25px;
     background: #fff;
@@ -1883,7 +1809,7 @@ nav ul {
     height: 40px;
     width: 160px;
     left: 5px;
-    top: 0px;
+    top: 0;
     border-radius: 8px;
     padding: 8px 25px 8px 25px;
     background: #fff;
@@ -1900,7 +1826,7 @@ nav ul {
     font-size: 15px;
     font-weight: 500;
     line-height: 20px;
-    letter-spacing: 0em;
+    letter-spacing: 0;
     text-align: center;
     color: #396df2;
   }
@@ -1917,7 +1843,7 @@ nav ul {
     font-size: 15px;
     font-weight: 500;
     line-height: 20px;
-    letter-spacing: 0em;
+    letter-spacing: 0;
     text-align: center;
     color: #396df2;
   }
@@ -1927,7 +1853,7 @@ nav ul {
     width: 18px;
     left: 3px;
     top: 3px;
-    border-radius: 0px;
+    border-radius: 0;
     color: #6070ff;
   }
 
@@ -1944,7 +1870,7 @@ nav ul {
     height: 40px;
     width: 160px;
     left: 5px;
-    top: 0px;
+    top: 0;
     border-radius: 8px;
     padding: 8px 25px 8px 25px;
     background: #fff;
@@ -1961,15 +1887,9 @@ nav ul {
     font-size: 15px;
     font-weight: 500;
     line-height: 20px;
-    letter-spacing: 0em;
+    letter-spacing: 0;
     text-align: center;
     color: #396df2;
-  }
-
-  .cardtwo {
-    display: flex;
-    align-items: center;
-    justify-content: center;
   }
 
   #nature-mobile {
@@ -1995,15 +1915,19 @@ nav ul {
   .mobilepopup {
     display: none;
   }
+
   #desktop-pop-button {
     display: block;
   }
+
   #mobile-pop-button {
     display: none;
   }
+
   #tonic-desktop {
     display: block;
   }
+
   #tonic-mobile {
     display: none;
   }
