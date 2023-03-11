@@ -216,7 +216,7 @@ function closeMenu() {
   sidemenu.style.right = "-768px";
 }
 
-//Form validation
+//Form validation project
 
 const form = document.querySelector("form");
 form.addEventListener("submit", handleSubmit);
