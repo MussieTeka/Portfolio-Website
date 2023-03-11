@@ -57,26 +57,27 @@ After you're finished please remove all the comments and instructions!
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 Completed Responsive Portfolio Website!<a name="about-project"></a>
+# 📖 Completed Responsive Portfolio Website with Popup Window Included.!<a name="about-project"></a>
 
-This project involves creating a completed and responsive portfolio website with a focus on the different pages and content of the website. The design has been provided in Figma, and the goal is to implement it as accurately as possible. I used CSS and HTML during development.
+This project involves creating a completed and responsive portfolio website with a focus on the different pages, content of the website, responsiveness and overrall functionality of the website. The design has been provided in Figma, and the goal is to implement it as accurately as possible. I used HTML, CSS and Javascript during development.
 
 ## 🛠 Built With <a name="built-with"></a>
 
 > GitHub Desktop
 > Visual Studio Code
 > Git
-> HTML and CSS
+> HTML, CSS and Javascript.
 
 ### Tech Stack <a name="tech-stack"></a>
 
-> Used basic html, css, linters and Microverse templates.
+> Used basic HTML, CSS, Javascript, linters and Microverse Figma templates.
 
 <details>
   <summary>Client</summary>
   <ul>
     <li><a href="https://www.w3.org/html/">HTML</a></li>
     <li><a href="https://www.w3.org/Style/CSS/">CSS</a></li>
+    <li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript">JavaScript</a></li>
 </details>
 
 <!-- Features -->
@@ -86,8 +87,8 @@ This project involves creating a completed and responsive portfolio website with
 - **[Simple toolbar or header section for easy website navigation]**
 - **[Headline section designed to be visually appealing and eye-catching]**
 - **[Mobile-first design approach for accessibility and functionality on all devices]**
-- **[Use of HTML and CSS for development]**
-- **[Develops valuable skills in HTML and CSS development, mobile-first design, and website navigation design.]**
+- **[Use of HTML, CSS and Javascript for development]**
+- **[Develops valuable skills in HTML, CSS and Javascript development, mobile-first design, and website navigation design.]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -221,11 +222,11 @@ I would like to thank Microverse, my fellow student partners, code reviewers and
 
 - **[Does this project contains Javascript?]**
 
-  - [This is simple HTML and CSS project. Doesn't have any Javascript file yet.]
+  - [Yes, this project contains javascript. JS was used to make the website dynamic and add some additional functionalities.]
 
 - **[How was the development process of this project?]**
 
-  - [It was both interesting and challenging process. Through this project, you got to know the basics of Github, HTML, and CSS.]
+  - [It was both interesting and challenging process. Through this project, you got to know the basics of Github, HTML, CSS and Javascript.]
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
