@@ -14,7 +14,7 @@
     />
   </head>
   <body>
-    <header id="mobiile">
+    <header>
       <div class="nav-container">
         <nav>
           <p class="logo">Mussie</p>
@@ -73,7 +73,7 @@
       </div>
     </header>
     <!-- Second Card -->
-    <section id="porfolio" class="card-1">
+    <section id="porfolio" class="cardone">
       <div class="nature">
         <img
           id="nature-mobile"
@@ -99,11 +99,19 @@
           <li id="css"><p>css</p></li>
           <li id="javascript"><p>javascript</p></li>
         </ul>
-        <button>See Project</button>
+        <button onclick="openPopup('firstpopup')" id="tonic-desktop">
+          See Project
+        </button>
+        <button
+          id="tonic-mobile"
+          onclick="toggleMobilePopup('mobilepopup', true)"
+        >
+          See Project
+        </button>
       </div>
     </section>
     <!-- Third Card Mobile-->
-    <section class="card-3" id="card-3-mobile">
+    <section class="cardthree" id="cardthree-mobile">
       <div class="nature">
         <img
           id="nature-mobile"
@@ -130,12 +138,13 @@
           <li id="css"><p>css</p></li>
           <li id="javascript"><p>javascript</p></li>
         </ul>
-        <button>See Project</button>
+        <button onclick="toggleMobilePopup('secondmobilepopup', true)">
+          See Project
+        </button>
       </div>
     </section>
-
     <!-- Third Card Desktop Part -->
-    <div class="card-2" id="card-3-desktop">
+    <div class="cardtwo" id="cardthree-desktop">
       <div class="multi-post">
         <h2>Multi-Post Stories</h2>
         <img src="Images/Facebook-Frame.png" alt="Frame Image" />
@@ -150,7 +159,13 @@
           <li id="css"><p>css</p></li>
           <li id="javascript"><p>javascript</p></li>
         </ul>
-        <button role="button" aria-label="See Project">See Project</button>
+        <button
+          onclick="openPopup('secondpopup')"
+          role="button"
+          aria-label="See Project"
+        >
+          See Project
+        </button>
       </div>
       <div class="art">
         <img
@@ -160,7 +175,7 @@
       </div>
     </div>
     <!-- Fourth card Mobile -->
-    <section class="card-1" id="card-4-mobile">
+    <section class="cardone" id="cardfour-mobile">
       <div class="nature">
         <img src="Images/Snapshoot Portfolio (2).png" alt="Nature Image" />
       </div>
@@ -176,11 +191,17 @@
           <li id="css"><p>css</p></li>
           <li id="javascript"><p>javascript</p></li>
         </ul>
-        <button role="button" aria-label="See Project">See Project</button>
+        <button
+          onclick="toggleMobilePopup('thirdmobilepopup', true)"
+          role="button"
+          aria-label="See Project"
+        >
+          See Project
+        </button>
       </div>
     </section>
     <!-- Fourth Card Desktop-->
-    <div class="card-1" id="card-4-desktop">
+    <div class="cardone" id="cardfour-desktop">
       <div class="nature">
         <img src="Images/nature desktop.png" alt="Nature desktop" />
       </div>
@@ -197,13 +218,18 @@
           <li id="css"><p>css</p></li>
           <li id="javascript"><p>javascript</p></li>
         </ul>
-        <button id="third-button" role="button" aria-label="See Project">
+        <button
+          onclick="openPopup('thirdpopup')"
+          id="third-button"
+          role="button"
+          aria-label="See Project"
+        >
           See Project
         </button>
       </div>
     </div>
     <!-- Fifth Card Mobile -->
-    <section class="card-3" id="card-5-mobile">
+    <section class="cardthree" id="cardfive-mobile">
       <div class="nature">
         <img
           id="nature-mobile"
@@ -230,11 +256,17 @@
           <li id="css"><p>css</p></li>
           <li id="javascript"><p>javascript</p></li>
         </ul>
-        <button role="button" aria-label="See Project">See Project</button>
+        <button
+          onclick="toggleMobilePopup('fourthmobilepopup', true)"
+          role="button"
+          aria-label="See Project"
+        >
+          See Project
+        </button>
       </div>
     </section>
     <!-- Fifth Card Desktop -->
-    <div class="card-2" id="card-5-desktop">
+    <div class="cardtwo" id="cardfive-desktop">
       <div class="multi-post">
         <h2>Uber Navigation</h2>
         <img src="Images/Frame-Uber.png" alt="Uber Frame" />
@@ -248,7 +280,7 @@
           <li id="css"><p>css</p></li>
           <li id="javascript"><p>javascript</p></li>
         </ul>
-        <button>See Project</button>
+        <button onclick="openPopup('fourthpopup')">See Project</button>
       </div>
       <div class="art">
         <img src="Images/Desktop 2.png" alt="Artwork related to the project" />
@@ -363,12 +395,7 @@
       </p>
       <form action="https://formspree.io/f/xjvdogvz" method="post">
         <label for="name"></label>
-        <input
-          type="text"
-          id="name"
-          name="name"
-          placeholder="Your Name"
-        />
+        <input type="text" id="name" name="name" placeholder="Your Name" />
         <label for="email"></label>
         <input
           type="email"
@@ -381,6 +408,7 @@
         <textarea
           id="message"
           name="message"
+          required
           placeholder="Write your message here"
           aria-label="Message"
         ></textarea>
